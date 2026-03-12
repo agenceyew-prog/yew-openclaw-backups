@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "acd75547-fa70-4949-b2c0-be22675840fd",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Sauvegarde Quotidienne (12h)",
+      "enabled": true,
+      "createdAtMs": 1773310118908,
+      "updatedAtMs": 1773310118908,
+      "schedule": {
+        "expr": "0 12 * * *",
+        "tz": "Europe/Paris",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "/data/.openclaw/backup_script.sh"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "6163128980",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773313200000
+      }
+    },
+    {
+      "id": "581019a0-748d-4b8a-ab9d-0f487e711f56",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Sauvegarde Quotidienne (22h)",
+      "enabled": true,
+      "createdAtMs": 1773310118931,
+      "updatedAtMs": 1773310118931,
+      "schedule": {
+        "tz": "Europe/Paris",
+        "kind": "cron",
+        "expr": "0 22 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "/data/.openclaw/backup_script.sh",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "6163128980",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1773349200000
+      }
+    },
+    {
+      "id": "071cc6f4-22a4-46b4-afbb-954331077e06",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Sauvegarde Quotidienne (23h59)",
+      "enabled": true,
+      "createdAtMs": 1773310118951,
+      "updatedAtMs": 1773310118951,
+      "schedule": {
+        "expr": "59 23 * * *",
+        "tz": "Europe/Paris",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "/data/.openclaw/backup_script.sh",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "to": "6163128980",
+        "channel": "telegram",
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1773356340000
+      }
+    }
+  ]
+}

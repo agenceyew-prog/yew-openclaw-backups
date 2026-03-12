@@ -1,0 +1,7 @@
+.env
+agents/
+credentials/
+identity/
+github_backup_script.sh
+openclaw.json*
+*.lock

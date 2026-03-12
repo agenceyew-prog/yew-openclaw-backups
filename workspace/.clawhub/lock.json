@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "self-improving-agent": {
+      "version": "3.0.1",
+      "installedAt": 1773307400960
+    },
+    "api-gateway": {
+      "version": "1.0.66",
+      "installedAt": 1773307412312
+    },
+    "agent-browser-clawdbot": {
+      "version": "0.1.0",
+      "installedAt": 1773307413838
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1773308087944
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1773308722566
+    }
+  }
+}
