@@ -8,7 +8,7 @@
       "name": "Sauvegarde Quotidienne (12h)",
       "enabled": true,
       "createdAtMs": 1773310118908,
-      "updatedAtMs": 1773310118908,
+      "updatedAtMs": 1773918012804,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Europe/Paris",
@@ -26,7 +26,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1773313200000
+        "nextRunAtMs": 1774004400000,
+        "lastRunAtMs": 1773918000046,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 12758,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -36,7 +43,7 @@
       "name": "Sauvegarde Quotidienne (22h)",
       "enabled": true,
       "createdAtMs": 1773310118931,
-      "updatedAtMs": 1773310118931,
+      "updatedAtMs": 1773954011091,
       "schedule": {
         "tz": "Europe/Paris",
         "kind": "cron",
@@ -50,11 +57,193 @@
       },
       "delivery": {
         "mode": "announce",
-        "to": "6163128980",
-        "channel": "telegram"
+        "channel": "telegram",
+        "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1773349200000
+        "nextRunAtMs": 1774040400000,
+        "lastRunAtMs": 1773954000035,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 11056,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "8dce8d3b-27d2-454e-b731-7e4465f150dd",
+      "name": "Sauvegarde Quotidienne GitHub (23h30)",
+      "enabled": true,
+      "createdAtMs": 1773311986824,
+      "updatedAtMs": 1773873014823,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 23 * * *",
+        "tz": "Europe/Paris"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "/data/.openclaw/github_backup_script.sh"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-5216653116"
+      },
+      "state": {
+        "nextRunAtMs": 1773959400000,
+        "lastRunAtMs": 1773873000028,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 14795,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 2,
+        "lastErrorReason": "rate_limit",
+        "lastError": "⚠️ API rate limit reached. Please try again later."
+      }
+    },
+    {
+      "id": "50c70e78-f47f-4a70-ba7f-7e686891fa57",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Création brouillons prospects quotidiens",
+      "enabled": true,
+      "createdAtMs": 1773665125005,
+      "updatedAtMs": 1773907325935,
+      "schedule": {
+        "expr": "0 9 * * 1-5",
+        "tz": "Europe/Paris",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "PROCESSUS DE RÉDACTION DES BROUILLONS (Règle stricte) :\n1. Lis le Google Sheet pour trouver 5 prospects \"Non contactés\" (tu peux t'aider d'un script Python pour récupérer les données si besoin).\n2. Pour CHAQUE prospect, invoque le sous-agent `redacteur-emails-prospects` via l'outil `sessions_spawn`. \nFOURNIS-LUI L'EXEMPLE DE LA LIGUE DE BASKET DE BRETAGNE pour qu'il comprenne le niveau d'hyper-personnalisation attendu. Demande-lui de s'ancrer sur l'actualité du prospect. Refuse tout modèle générique ou redondant.\n3. Une fois les 5 textes générés, utilise l'API Maton (ou ton script Python) pour créer les brouillons Gmail et mettre à jour la colonne 'Statut Contact'.\n4. Confirme l'opération dans le groupe Telegram Yew.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-5216653116"
+      },
+      "state": {
+        "nextRunAtMs": 1773993600000,
+        "lastRunAtMs": 1773907200038,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 125897,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "e34a5304-5bba-4fd1-a3d6-9dfb8f0323cb",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Veille opportunités Yew (Matin)",
+      "enabled": true,
+      "createdAtMs": 1773673845871,
+      "updatedAtMs": 1773909115072,
+      "schedule": {
+        "expr": "30 9 * * 1-5",
+        "kind": "cron",
+        "tz": "Europe/Paris"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Réalise la veille d'opportunités Yew en suivant scrupuleusement le workflow en 5 étapes décrit dans MEMORY.md (Générer cibles -> Web Search -> Filtrer URLs -> Browser -> Traiter opportunités). Utilise les scripts dans scripts/prospect_veille.py pour chaque étape. Une fois terminé, envoie le rapport final au groupe Telegram Yew.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-5216653116"
+      },
+      "state": {
+        "nextRunAtMs": 1773995400000,
+        "lastRunAtMs": 1773909000015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 115057,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "77763649-ca75-4270-8940-1b34daf57768",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Veille opportunités Yew (Après-midi)",
+      "enabled": true,
+      "createdAtMs": 1773673850191,
+      "updatedAtMs": 1773925232692,
+      "schedule": {
+        "kind": "cron",
+        "tz": "Europe/Paris",
+        "expr": "0 14 * * 1-5"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Réalise la veille d'opportunités Yew en suivant scrupuleusement le workflow en 5 étapes décrit dans MEMORY.md (Générer cibles -> Web Search -> Filtrer URLs -> Browser -> Traiter opportunités). Utilise les scripts dans scripts/prospect_veille.py pour chaque étape. Une fois terminé, envoie le rapport final au groupe Telegram Yew."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-5216653116"
+      },
+      "state": {
+        "nextRunAtMs": 1774011600000,
+        "lastRunAtMs": 1773925200033,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 32659,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "58f466c1-fb95-498b-9b67-aaaa4d80472a",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Veille opportunités Yew (Fin de journée)",
+      "enabled": true,
+      "createdAtMs": 1773673851682,
+      "updatedAtMs": 1773945669005,
+      "schedule": {
+        "expr": "40 19 * * 1-5",
+        "kind": "cron",
+        "tz": "Europe/Paris"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "message": "Réalise la veille d'opportunités Yew en suivant scrupuleusement le workflow en 5 étapes décrit dans MEMORY.md. INSTRUCTION SPÉCIALE : Élargis considérablement les critères de recherche pour l'étape 'Générer cibles' (inclus les fédérations sportives de taille moyenne, ligues régionales, e-sport émergent, événements corporate/sportifs, ou d'autres secteurs moins évidents). Utilise les scripts dans scripts/prospect_veille.py. Une fois terminé, envoie le rapport final au groupe Telegram Yew.",
+        "kind": "agentTurn"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "-5216653116"
+      },
+      "state": {
+        "nextRunAtMs": 1774032000000,
+        "lastRunAtMs": 1773945600032,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 68973,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
