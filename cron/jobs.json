@@ -8,7 +8,7 @@
       "name": "Sauvegarde Quotidienne (12h)",
       "enabled": true,
       "createdAtMs": 1773310118908,
-      "updatedAtMs": 1773918012804,
+      "updatedAtMs": 1774004411732,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Europe/Paris",
@@ -26,11 +26,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774004400000,
-        "lastRunAtMs": 1773918000046,
+        "nextRunAtMs": 1774090800000,
+        "lastRunAtMs": 1774004400045,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12758,
+        "lastDurationMs": 11687,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "Sauvegarde Quotidienne (22h)",
       "enabled": true,
       "createdAtMs": 1773310118931,
-      "updatedAtMs": 1773954011091,
+      "updatedAtMs": 1774040414882,
       "schedule": {
         "tz": "Europe/Paris",
         "kind": "cron",
@@ -61,14 +61,16 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774040400000,
-        "lastRunAtMs": 1773954000035,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 11056,
+        "nextRunAtMs": 1774126800000,
+        "lastRunAtMs": 1774040400039,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 14843,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ API rate limit reached. Please try again later.",
+        "lastErrorReason": "rate_limit"
       }
     },
     {
@@ -76,7 +78,7 @@
       "name": "Sauvegarde Quotidienne GitHub (23h30)",
       "enabled": true,
       "createdAtMs": 1773311986824,
-      "updatedAtMs": 1773873014823,
+      "updatedAtMs": 1773959416628,
       "schedule": {
         "kind": "cron",
         "expr": "30 23 * * *",
@@ -94,16 +96,15 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1773959400000,
-        "lastRunAtMs": 1773873000028,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 14795,
+        "nextRunAtMs": 1774045800000,
+        "lastRunAtMs": 1773959400027,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 16601,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 2,
-        "lastErrorReason": "rate_limit",
-        "runningAtMs": 1773959400004
+        "consecutiveErrors": 0,
+        "runningAtMs": 1774045800007
       }
     },
     {
@@ -113,7 +114,7 @@
       "name": "Création brouillons prospects quotidiens",
       "enabled": true,
       "createdAtMs": 1773665125005,
-      "updatedAtMs": 1773907325935,
+      "updatedAtMs": 1773993823833,
       "schedule": {
         "expr": "0 9 * * 1-5",
         "tz": "Europe/Paris",
@@ -131,14 +132,14 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1773993600000,
-        "lastRunAtMs": 1773907200038,
+        "nextRunAtMs": 1774252800000,
+        "lastRunAtMs": 1773993600057,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 125897,
-        "lastDeliveryStatus": "not-delivered",
+        "lastDurationMs": 223776,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": false
+        "lastDelivered": true
       }
     },
     {
@@ -148,7 +149,7 @@
       "name": "Veille opportunités Yew (Matin)",
       "enabled": true,
       "createdAtMs": 1773673845871,
-      "updatedAtMs": 1773909115072,
+      "updatedAtMs": 1773995509423,
       "schedule": {
         "expr": "30 9 * * 1-5",
         "kind": "cron",
@@ -166,11 +167,11 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1773995400000,
-        "lastRunAtMs": 1773909000015,
+        "nextRunAtMs": 1774254600000,
+        "lastRunAtMs": 1773995400029,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 115057,
+        "lastDurationMs": 109394,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -183,7 +184,7 @@
       "name": "Veille opportunités Yew (Après-midi)",
       "enabled": true,
       "createdAtMs": 1773673850191,
-      "updatedAtMs": 1773925232692,
+      "updatedAtMs": 1774011675679,
       "schedule": {
         "kind": "cron",
         "tz": "Europe/Paris",
@@ -201,11 +202,11 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774011600000,
-        "lastRunAtMs": 1773925200033,
+        "nextRunAtMs": 1774270800000,
+        "lastRunAtMs": 1774011600027,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 32659,
+        "lastDurationMs": 75652,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -218,7 +219,7 @@
       "name": "Veille opportunités Yew (Fin de journée)",
       "enabled": true,
       "createdAtMs": 1773673851682,
-      "updatedAtMs": 1773945669005,
+      "updatedAtMs": 1774032014812,
       "schedule": {
         "expr": "40 19 * * 1-5",
         "kind": "cron",
@@ -236,14 +237,16 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774032000000,
-        "lastRunAtMs": 1773945600032,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 68973,
+        "nextRunAtMs": 1774291200000,
+        "lastRunAtMs": 1774032000024,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 14788,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 1,
+        "lastError": "⚠️ API rate limit reached. Please try again later.",
+        "lastErrorReason": "rate_limit"
       }
     }
   ]
