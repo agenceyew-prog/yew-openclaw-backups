@@ -8,7 +8,7 @@
       "name": "Sauvegarde Quotidienne (12h)",
       "enabled": true,
       "createdAtMs": 1773310118908,
-      "updatedAtMs": 1774004411732,
+      "updatedAtMs": 1774090814161,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Europe/Paris",
@@ -26,11 +26,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774090800000,
-        "lastRunAtMs": 1774004400045,
+        "nextRunAtMs": 1774177200000,
+        "lastRunAtMs": 1774090800028,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11687,
+        "lastDurationMs": 14133,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "Sauvegarde Quotidienne (22h)",
       "enabled": true,
       "createdAtMs": 1773310118931,
-      "updatedAtMs": 1774040414882,
+      "updatedAtMs": 1774126811764,
       "schedule": {
         "tz": "Europe/Paris",
         "kind": "cron",
@@ -61,16 +61,14 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774126800000,
-        "lastRunAtMs": 1774040400039,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 14843,
+        "nextRunAtMs": 1774213200000,
+        "lastRunAtMs": 1774126800028,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 11736,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "⚠️ API rate limit reached. Please try again later.",
-        "lastErrorReason": "rate_limit"
+        "consecutiveErrors": 0
       }
     },
     {
@@ -78,7 +76,7 @@
       "name": "Sauvegarde Quotidienne GitHub (23h30)",
       "enabled": true,
       "createdAtMs": 1773311986824,
-      "updatedAtMs": 1773959416628,
+      "updatedAtMs": 1774045816817,
       "schedule": {
         "kind": "cron",
         "expr": "30 23 * * *",
@@ -96,15 +94,15 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774045800000,
-        "lastRunAtMs": 1773959400027,
+        "nextRunAtMs": 1774132200000,
+        "lastRunAtMs": 1774045800028,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 16601,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 16789,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774045800007
+        "runningAtMs": 1774132200006
       }
     },
     {
