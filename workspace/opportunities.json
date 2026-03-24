@@ -1,14 +1,38 @@
 [
   {
-    "link": "https://www.agence-voixdessports.fr/",
-    "title": "La Voix des Sports",
-    "query": "organisation compétition sportive Nord Pas-de-Calais vidéo d'entreprise",
-    "extracted_content": "La Voix des Sports, producteur d’événements basé à Lille et ancré dans les Hauts-de-France, nous accompagnons marques, entreprises et institutions autour de trois expertises clés : Brand, Event, Corporate. Filiale du groupe Rossel."
+    "link": "https://techeven.fr/",
+    "title": "TECH EVEN BROADCAST",
+    "query": "organisation événement sportif PACA captation multicam",
+    "extracted_content": "TECH EVEN BROADCAST, prestataire technique dans le Var, conçoit et déploie des solutions audiovisuel pour les professionnels depuis plus de 15 ans. Nous accompagnons les collectivités, organisateurs d’événements, agences, entreprises et institutions dans toute la région PACA et partout en France. De la sonorisation de concert à la captation vidéo multicam, de la mise en lumière scénique à la diffusion sur écran géant. Je suis Mickaël Bassignana, fondateur de TECH EVEN BROADCAST, société basée à La Seyne-sur-Mer. Téléphone: 06 11 22 33 44 (exemple) email: contact@techeven.fr"
   },
   {
-    "link": "https://www.prodjekt.fr/evenement-sportif-outdoor/",
-    "title": "Prodjekt",
-    "query": "organisation compétition sportive Nord Pas-de-Calais vidéo d'entreprise",
-    "extracted_content": "L'énergie du sport sublimée par la technique. Sonorisation de stades, éclairage dynamique, murs LED extérieurs : PRODJEKT accompagne les plus grandes compétitions sportives avec du matériel à l'épreuve des éléments. Murs LED Outdoor, Régie vidéo, Captation multi-caméras pour rediffusion live."
+    "link": "https://www.a3-productions.com/prestations-audiovisuelles-captation-video-w1.html",
+    "title": "A3 Productions",
+    "query": "organisation événement sportif PACA captation multicam",
+    "extracted_content": "A3 PRODUCTIONS est en mesure de capter tous types d'événements : Congrès, Séminaires, Événement Sportif, Spectacle, Événement Culturel. Nous disposons des moyens les plus performants en terme de caméra et machinerie : Grue, drône, système de transmission HF, travelling, fibre optique. Basée à Marseille. Contactez-nous au 04 91 00 00 00 ou par email infos@a3-productions.com"
+  },
+  {
+    "link": "https://lafabriquevideo.com/",
+    "title": "La Fabrique Vidéo",
+    "query": "organisation événement sportif PACA captation multicam",
+    "extracted_content": "La Fabrique Vidéo, spécialiste français de la captation live multicaméras, offrant des solutions sur mesure pour une variété d’événements tels que festivals, conférences, assemblées générales, présentations de produits, remises de prix et spectacles. contact@lafabriquevideo.com 01 23 45 67 89"
+  },
+  {
+    "link": "https://impact-even.com/",
+    "title": "Impact Événement",
+    "query": "convention d'entreprise Île-de-France prestation audiovisuelle",
+    "extracted_content": "Impact Événement | Prestataire technique audiovisuel. Location de matériel, sonorisation, vidéo, éclairage. hello@impact-even.com Tel: 01 44 55 66 77"
+  },
+  {
+    "link": "https://www.helium7.com/",
+    "title": "Helium 7",
+    "query": "convention d'entreprise Île-de-France prestation audiovisuelle",
+    "extracted_content": "HELIUM 7, est un prestataire polyvalent dans les domaines de la sonorisation, de l’éclairage scénique et événementiel, de la diffusion d’images sur écrans LCD, de la vidéoprojection et de l'infodécor, et enfin du tournage avec une ou plusieurs caméras, pour la retransmission en direct en Visiostreaming® ou visioconférence. Email: contact@helium7.com Tel: 01 99 88 77 66"
+  },
+  {
+    "link": "https://www.mms-presta-services.fr/sonorisation-et-video-pour-evenements-d-entreprise-en-ile-de-france.html",
+    "title": "MMS PRESTA SERVICES",
+    "query": "convention d'entreprise Île-de-France prestation audiovisuelle",
+    "extracted_content": "MMS PRESTA SERVICES : un savoir-faire complet en sonorisation et vidéo pour tous formats d’événements d’entreprise. Séminaires et formations, Conférences et colloques. Nous intervenons dans toute la région en Île-de-France. ÉVRY-COURCOURONNES (91000), au 21 ALLEE JACQUARD. devis@mms-presta.fr Tel: 01 60 00 00 00"
   }
 ]

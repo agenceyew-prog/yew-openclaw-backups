@@ -8,7 +8,7 @@
       "name": "Sauvegarde Quotidienne (12h)",
       "enabled": true,
       "createdAtMs": 1773310118908,
-      "updatedAtMs": 1774263649920,
+      "updatedAtMs": 1774350010701,
       "schedule": {
         "expr": "0 12 * * *",
         "tz": "Europe/Paris",
@@ -26,11 +26,11 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1774350000000,
-        "lastRunAtMs": 1774263600017,
+        "nextRunAtMs": 1774436400000,
+        "lastRunAtMs": 1774350000032,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 49903,
+        "lastDurationMs": 10669,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -43,7 +43,7 @@
       "name": "Sauvegarde Quotidienne (22h)",
       "enabled": true,
       "createdAtMs": 1773310118931,
-      "updatedAtMs": 1774299611312,
+      "updatedAtMs": 1774386011717,
       "schedule": {
         "tz": "Europe/Paris",
         "kind": "cron",
@@ -61,11 +61,11 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774386000000,
-        "lastRunAtMs": 1774299600027,
+        "nextRunAtMs": 1774472400000,
+        "lastRunAtMs": 1774386000042,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11285,
+        "lastDurationMs": 11675,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -76,7 +76,7 @@
       "name": "Sauvegarde Quotidienne GitHub (23h30)",
       "enabled": true,
       "createdAtMs": 1773311986824,
-      "updatedAtMs": 1774218613738,
+      "updatedAtMs": 1774305024165,
       "schedule": {
         "kind": "cron",
         "expr": "30 23 * * *",
@@ -94,15 +94,15 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774305000000,
-        "lastRunAtMs": 1774218600019,
+        "nextRunAtMs": 1774391400000,
+        "lastRunAtMs": 1774305000021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 13719,
+        "lastDurationMs": 24144,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774305000004
+        "runningAtMs": 1774391400006
       }
     },
     {
@@ -112,7 +112,7 @@
       "name": "Création brouillons prospects quotidiens",
       "enabled": true,
       "createdAtMs": 1773665125005,
-      "updatedAtMs": 1774253400303,
+      "updatedAtMs": 1774339289390,
       "schedule": {
         "expr": "0 9 * * 1-5",
         "tz": "Europe/Paris",
@@ -130,16 +130,14 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774339200000,
-        "lastRunAtMs": 1774252800042,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 600261,
+        "nextRunAtMs": 1774425600000,
+        "lastRunAtMs": 1774339200035,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 89355,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastDelivered": true,
-        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
-        "lastErrorReason": "timeout"
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -149,7 +147,7 @@
       "name": "Veille opportunités Yew (Matin)",
       "enabled": true,
       "createdAtMs": 1773673845871,
-      "updatedAtMs": 1774254795380,
+      "updatedAtMs": 1774341141912,
       "schedule": {
         "expr": "30 9 * * 1-5",
         "kind": "cron",
@@ -167,16 +165,14 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774341000000,
-        "lastRunAtMs": 1774254600014,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 195366,
+        "nextRunAtMs": 1774427400000,
+        "lastRunAtMs": 1774341000015,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 141897,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastDelivered": true,
-        "lastError": "The AI service is temporarily overloaded. Please try again in a moment.",
-        "lastErrorReason": "overloaded"
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -186,7 +182,7 @@
       "name": "Veille opportunités Yew (Après-midi)",
       "enabled": true,
       "createdAtMs": 1773673850191,
-      "updatedAtMs": 1774271400343,
+      "updatedAtMs": 1774357622311,
       "schedule": {
         "kind": "cron",
         "tz": "Europe/Paris",
@@ -204,16 +200,14 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774357200000,
-        "lastRunAtMs": 1774270800025,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 600318,
+        "nextRunAtMs": 1774443600000,
+        "lastRunAtMs": 1774357200035,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 422276,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 1,
-        "lastError": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
-        "lastErrorReason": "timeout"
+        "consecutiveErrors": 0
       }
     },
     {
@@ -223,7 +217,7 @@
       "name": "Veille opportunités Yew (Fin de journée)",
       "enabled": true,
       "createdAtMs": 1773673851682,
-      "updatedAtMs": 1774291255559,
+      "updatedAtMs": 1774377708511,
       "schedule": {
         "expr": "40 19 * * 1-5",
         "kind": "cron",
@@ -241,11 +235,11 @@
         "to": "-5216653116"
       },
       "state": {
-        "nextRunAtMs": 1774377600000,
-        "lastRunAtMs": 1774291200027,
+        "nextRunAtMs": 1774464000000,
+        "lastRunAtMs": 1774377600026,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 55532,
+        "lastDurationMs": 108485,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

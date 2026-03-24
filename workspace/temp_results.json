@@ -1,0 +1,18 @@
+[
+  {
+    "query": "organisation événement sportif PACA captation multicam",
+    "results": [
+      {"link": "https://techeven.fr/", "title": "techeven.fr", "snippet": "TECH EVEN / TECH EVEN BROADCAST est un prestataire technique basé en PACA..."},
+      {"link": "https://www.a3-productions.com/prestations-audiovisuelles-captation-video-w1.html", "title": "a3-productions.com", "snippet": "A3 Productions, située à Marseille, possède 20 ans d'expérience..."},
+      {"link": "https://lafabriquevideo.com/", "title": "lafabriquevideo.com", "snippet": "La Fabrique Vidéo propose son expertise..."}
+    ]
+  },
+  {
+    "query": "convention d'entreprise Île-de-France prestation audiovisuelle",
+    "results": [
+      {"link": "https://impact-even.com/", "title": "impact-even.com", "snippet": "Impact Événement propose des prestations audiovisuelles complètes..."},
+      {"link": "https://www.helium7.com/", "title": "helium7.com", "snippet": "Helium7 se positionne comme un spécialiste en location de matériel..."},
+      {"link": "https://www.mms-presta-services.fr/sonorisation-et-video-pour-evenements-d-entreprise-en-ile-de-france.html", "title": "mms-presta-services.fr", "snippet": "MMS PRESTA SERVICES propose des solutions complètes de sonorisation et vidéo..."}
+    ]
+  }
+]
